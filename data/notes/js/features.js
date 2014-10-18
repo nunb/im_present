@@ -1,19 +1,21 @@
 /**
- * 
+ * This file intializes most of the features that are being displayed on the note website.
+ * Mainly deals with timer events.
  */
+
 var start_time = 0;
 var timerID = 0;
+var diff = 0;
+
 $(document).ready(function (event) {
 	$('input[name=limit]').change(updateLimit);
 	$('input[name=limit]')[0].addEventListener('input',updateLimit);
 	$("button[name=start]").width($("button[name=start]").height());
+	$("button[name=reset]").click(resetWatch);
 	var watch = $('span#watch');
+	watch.find('.light').width(watch.find('.light').height());
 	var startBtn = watch.find('button[name=start]');
-	startBtn.click(function (event) {
-		start_time = new Date().getTime();
-		$(this).text('Pause');
-		updateWatch();
-	});
+	startBtn.click(startWatch);
 });
 
 function updateLimit(event) {
@@ -49,18 +51,26 @@ function updateWatch() {
 	
 	
 }
-function startWatch(event) {
-
-	startBtn.val('Pause');
-	
+function startWatch() {
+	if ($(this).text() == 'Start') {
+		if(diff == 0) {
+			start_time = new Date().getTime();
+		} else {
+			start_time = new Date().getTime() - diff;
+		}
+		$(this).text('Pause');
+		updateWatch();
+	} else {
+		stopWatch();
+		$(this).text('Start');
+	}
 }
 
 function stopWatch() {
-	
-}
-function pauseWatch() {
-	
+	diff = new Date().getTime() - start_time;
+	clearTimeout(timerID);
 }
 function resetWatch() {
-	
+	start_time = new Date().getTime();
+	diff = 0;
 }
