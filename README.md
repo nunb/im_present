@@ -5,7 +5,7 @@ This is a small firefox add-on designed to help you holding presentations with i
 
 It basically scans the website it is activated on for 
 \<div\> tags with the class 'note', contained within a 
-<div> tag with the class 'step'.
+\<div\> tag with the class 'step'.
 
 The html content of those notes is then wrapped into a webpage, which gets displayed in a new browser 
 window. This enables you to use html for the structure of the notes. 
