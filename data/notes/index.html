@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Notes</title>
+<script src='js/jquery.js'></script>
+<script src='js/features.js'></script>
+<link href='css/notes.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+	<span id='presentation_name'></span> || <span id='slide_name'></span>
+</header>
+<div class='notes'>
+	
+</div>
+<footer>
+	<span class='counter'>Slide <span id='counter'>01</span>/<span id='total'></span> <span id='watch'><button name='start'>Start</button></span></span>
+	<span class='timer'> Time:<font class='time'><span class='time' id='hours'>00</span>:<span class='time' id='minutes'>00</span>:<span class='time' id='seconds'>00</span></font> 
+	<span id='setLimit'>Limit is <span id='limitDisplay'>30</span> Minutes<br> 
+	<input type='range' step='1' value='30' min='1' max='120' name='limit' placeholder="15"></input></span>
+	</span>
+</footer>
+</body>
+</html>

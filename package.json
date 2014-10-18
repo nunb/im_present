@@ -1,0 +1,9 @@
+{
+  "name": "im_present",
+  "title": "im_present",
+  "id": "jid1-p7TGh2x18GqjLw",
+  "description": "Displays additional information in a second browser windows, whilst running an impress presentation in the original window.",
+  "author": "Felix Mallot",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}

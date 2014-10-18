@@ -1,0 +1,99 @@
+@CHARSET "ISO-8859-1";
+
+header {
+	
+}
+header .presentation_name {
+	font-size:small;
+}
+header .slide_name {
+	font-size:large;
+	font-weight:bold;
+}
+footer {
+	border-top:1px solid rgba(0, 0, 0, .3);
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	text-align: center;
+	height:16%;
+	width:100%;
+	
+}
+footer > span {
+	width:50%;
+	float:left;
+	height:100%;
+	font-size: x-large;
+	
+}
+footer > span:FIRST-CHILD {
+	margin-left:-4px;
+}
+footer > span:LAST-CHILD {
+	margin-right:-4px;
+}
+
+footer span#setLimit {
+	display:block;
+}
+footer span button {
+	font-size:x-large;
+	float:right;
+	height:100%;
+	top:0px;
+	bottom:0px;
+	margin:auto;
+}
+
+div.notes {
+	position:absolute;
+	top:0px;
+	font-size:x-large;
+	right:0px;
+	height:80%;
+	margin:2%;
+	padding:20px;
+	left:0px;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-bottom:0px;
+}
+header {
+	text-align:center;
+}
+span font.time {
+	margin-left:2px;
+	padding:2px;
+}
+span.overrun font.time{
+	background:red;
+	 -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+span.finalSprint font.time{
+	 -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	background:orange;
+}
+span.midway font.time{
+	background:orange;
+	 -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+span.short font.time{
+	 -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	background:green;
+}
