@@ -16,11 +16,14 @@ It also features a slide counter and a rudimentary timer.
 
 A very basic example for the structure the add-on is looking for:
 
-<pre><code>\<div class='step slide'\> <br>
-  This is a slide <br>
-  \<div class='note'\> With a note \</div\> <br>
-\</div\>
-</code><pre>
+<pre>
+<code>
+&lt;div class='step slide'&gt;
+  This is a slide 
+&lt;div class='note'&gt; With a note &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
 
 This is my first add-on and I wrote hastily, so don't expect perfection. 
 
